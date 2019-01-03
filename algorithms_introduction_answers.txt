@@ -1,8 +1,56 @@
-Using proper pseudo-code, describe the following primitive algorithms:
-
+>Using proper pseudo-code, describe the following primitive algorithms:
 Making coffee;
+A:
+```
+FUNCTION makeCoffee
+  Add coffee in coffee machine
+  Add water to coffee machine
+ THEN  Start coffee machine
+  Pour coffee into cup
+  IF ( sugar is required )
+        THEN Add two sugars
+        ELSE don’t add two sugars
+  ENDIF
+    Add two creams;
+    Serve;
+END FUNCTION
+```
 Washing dishes;
-A choice of your own.
-As with the knot algorithm, there may be more than one way to solve the problem. It is essential to try to pick the best algorithm for a situation. Name three companies who created an algorithm that made them successful, e.g., Google's search algorithm. It doesn't need to be a tech example (such as a recipe or manufacturing a product). Google's algorithm produces more relevant results than other search engines; what about each of your cases make them stand out?
+A:
+```
+FUNCTION washDishes
+  Add soap to sponge
+THEN scrub sponge on dish
+  Dry dish
+ IF (soap is required)
+  THEN Add more soap
+  ELSE don't add soap
+ ENDIF
+END FUNCTION
+```
 
-Hypothesize about what constitutes an efficient algorithm versus an inefficient algorithm.
+A choice of your own. Check out a book.;
+```
+FUNCTION checkoutBook(book, guest)
+ IF guest.accountActive THEN
+  PRINT "Your books have been issued."
+ ELSE 
+  SET book.status to "Checked Out"
+ IF NOT(guest.hasOverdueBooks) THEN
+  PRINT "Unable to check out book."
+ IF guest.outstandingFees = 0 THEN
+    PRINT "Unable to check out book."
+ END IF
+END FUNCTION
+```
+>As with the knot algorithm, there may be more than one way to solve the problem. It is essential to try to pick the best algorithm for a situation. Name three companies who created an algorithm that made them successful, e.g., Google's search algorithm. It doesn't need to be a tech example (such as a recipe or manufacturing a product). Google's algorithm produces more relevant results than other search engines; what about each of your cases make them stand out?
+
+A: Netflix utilizes the millions of bits of data they have to predict which shows and movies users would like to watch through their service. Netflix has a ton of data on their watchers – including the content they watch, how much of it they watch as well as demographic data. The company then uses this information to predict which content will likely be successful if streamed through the service and what the common success points between them are. Netflix also utilizes a well-refined recommendation algorithm to predict what users will likely want to watch.
+
+Facebook can predict likely preference patterns based on millions of pieces of demographic information and user activity. Facebook can go as far as predicting the evolution and demise of romantic relationships. According to data scientists at the company, relationships that last more than three months on the social network are likely to survive for years. By looking at connections and communication patterns, Facebook can even predict who might be in a relationship next.
+
+Match.com uses a sophisticated predictive algorithm known as a synapse to predict possible matches. This algorithm takes into consideration not only stated user preference but also the activity and browsing patterns of users to predict likely matches.
+
+>Hypothesize about what constitutes an efficient algorithm versus an inefficient algorithm.
+
+A: An efficient algorithm the same algorithm has the potential to address many different problems. An inefficient algorithm probably wouldn't be able to solve more than just one problem. An algorithm is considered efficient if its resource consumption, also known as computational cost, is at or below some acceptable level. It will run in a reasonable amount of time or space on an available computer, typically as a function of the size of the input. An inefficient algorithm would take up too much time or space on a computer.
