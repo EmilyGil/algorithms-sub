@@ -3,17 +3,19 @@ Making coffee;
 A:
 ```
 FUNCTION makeCoffee
-  Add coffee in coffee machine
-  Add water to coffee machine
- THEN  Start coffee machine
-  Pour coffee into cup
-  IF ( sugar is required )
-        THEN Add two sugars
-        ELSE don’t add two sugars
+    Add coffee in coffee machine
+    Add water to coffee machine
+  THEN Start coffee machine
+  WHILE (coffee cup is not full)
+    Do keep filling cup of coffee
+  END WHILE
+  IF (sugar is required)
+    THEN Add two sugars
+    ELSE don’t add two sugars
   ENDIF
-    Add two creams;
-    Serve;
-END FUNCTION
+    Add two creams
+    Serve
+END
 ```
 Washing dishes;
 A:
@@ -53,4 +55,4 @@ Match.com uses a sophisticated predictive algorithm known as a synapse to predic
 
 >Hypothesize about what constitutes an efficient algorithm versus an inefficient algorithm.
 
-A: An efficient algorithm the same algorithm has the potential to address many different problems. An inefficient algorithm probably wouldn't be able to solve more than just one problem. An algorithm is considered efficient if its resource consumption, also known as computational cost, is at or below some acceptable level. It will run in a reasonable amount of time or space on an available computer, typically as a function of the size of the input. An inefficient algorithm would take up too much time or space on a computer.
+A: An algorithm is considered efficient if its resource consumption, also known as computational cost, is at or below some acceptable level. It will run in a reasonable amount of time or space on an available computer, typically as a function of the size of the input. An inefficient algorithm would take up too much time or space on a computer.
